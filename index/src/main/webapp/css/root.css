@@ -1,0 +1,95 @@
+@charset "UTF-8";
+     *{
+	     margin: 0;
+		 padding: 0;
+	 }
+     html,body{
+	     height: 100%;
+	 }
+	 .wrap{
+	     height: 100%;
+		 width: 260px;
+		 background-color: #363a45;
+		 text-align: center;
+		 color: #fff;
+	 }
+	 .header{
+		 height: 60px;
+		 background-color: #44495a;
+		 font-size: 20px;
+		 line-height: 60px;
+	 }
+	 .nav{
+	     width: 250px;
+         margin: 10px 5px;
+	 }
+	 .nav-list h2{
+	     position:relative;
+	     padding: 15px 0;
+		 background-color: #3889d4;
+		 font-size: 15px;
+	 }
+	 .nav-list h2:hover{
+	     background-color: RoyalBlue;
+		 color: #cdcdcd;
+	 }
+	 .nav-list h2.on{                    /*设置h2点击后类on属性，点击后h2颜色变化*/
+	     background-color: #393c4a;
+	 }
+	 .nav-list i{
+	     position:absolute;
+		 right: 10px;
+		 top: 16px;
+		 border: 8px solid transparent;
+		 border-left-color: #fff;
+		 transform-origin: 1px 7px;   /*设置小三角旋转基点*/
+		 transition: .8s;    /*旋转过渡时间*/
+	 }
+	 
+	 .nav-list i.on{               /*设置点击后添加的类on属性（小三角旋转角度）*/
+	     transform: rotate(90deg);   
+	 }
+	 .hide{
+	     height: 0;
+		 overflow: hidden;
+		 margin-bottom: 5px;
+		 transition: 1s;
+	 }
+	 .hide h5{
+	     padding: 10px 0;
+		 background-color: #282c3a;
+		 border-bottom: 1px solid #42495d;
+	 }
+	 .hide h5:hover{
+	 	background-color: #03B9FA;
+	 }
+	 
+
+	 .hide a{
+	     padding: 10px 0;
+		 background-color: #282c3a;
+		 border-bottom: 1px solid #42495d;
+	 }
+	 .hide a:hover{
+	 	background-color: #03B9FA;
+	 }
+	 
+	 .button {
+    background-color: #0080c0; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #0080ff; /* Green */
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

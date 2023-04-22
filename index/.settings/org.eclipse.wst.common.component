@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+        
+    <wb-module deploy-name="IIAS">
+                
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+                
+        <wb-resource deploy-path="/WEB-INF/classes/" source-path="/src/main/ImportedClasses"/>
+                
+        <dependent-module archiveName="mysql-connector-java-8.0.27.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/mysql-connector-java-8.0.27/mysql-connector-java-8.0.27">
+                        
+            <dependency-type>uses</dependency-type>
+                    
+        </dependent-module>
+                
+        <dependent-module archiveName="mybatis-3.4.6.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/mybatis-3.4.6/mybatis-3.4.6">
+                        
+            <dependency-type>uses</dependency-type>
+                    
+        </dependent-module>
+                
+        <property name="java-output-path" value="/IIAS/build/classes"/>
+        <property name="context-root" value="IIAS"/>
+            
+    </wb-module>
+    
+</project-modules>
