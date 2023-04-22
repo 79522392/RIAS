@@ -1,0 +1,391 @@
+﻿*
+{
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+html, body
+{
+    background: #FFFFFF;
+    width: 100%;
+}
+
+body, td, th
+{
+    font-size: 12px;
+    overflow-x: hidden;
+}
+
+.position
+{
+    background: url(../Images/form/index_32.gif) left center no-repeat;
+    padding-left: 15px;
+    margin: 0 10px;
+    color: #666;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.line
+{
+    width: 99%;
+    margin-left: 5px;
+    display: block;
+    height: 2px;
+    overflow: hidden;
+    background: url(../Images/form/index_36.gif) repeat-x;
+}
+
+.search
+{
+    width: 99%;
+    margin-left: 5px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    
+}
+
+.search_txt
+{
+    width: 158px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+.ddl
+{
+    width: 120px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+.search_btn
+{
+    background: url(../Images/form/search.gif) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+
+.add_btn
+{
+    background: url(../Images/form/add.gif) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+.addUser_btn
+{
+    background: url(../Images/form/addUser.jpg) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+.addCar_btn
+{
+    background: url(../Images/form/addCar.jpg) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+.tree_btn
+{
+    background: url(../Images/form/tree.jpg) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+.edit_btn
+{
+    background: url(../Images/form/edit.gif) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+.loss_btn
+{
+    background: url(../Images/form/btn_Loss.jpg) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+.outbound_btn
+{
+    background: url(../Images/form/btn_Outbound.jpg) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+.repair_btn
+{
+    background: url(../Images/form/btn_Repair.jpg) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+.detail_btn
+{
+    background: url(../Images/form/btn_detail.jpg) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+.scrap_btn
+{
+    background: url(../Images/form/btn_Scrap.jpg) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+.warehouse_btn
+{
+    background: url(../Images/form/btn_Warehouse.jpg) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+.del_btn
+{
+    background: url(../Images/form/del.gif) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+
+.look_btn
+{
+    background: url(../Images/form/look.gif) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+
+.out_btn
+{
+    background: url(../Images/form/out.gif) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+
+.print_btn
+{
+    background: url(../Images/form/print.gif) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+
+.ok_btn
+{
+    background: url(../Images/form/ok.gif) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+
+.cancel_btn
+{
+    background: url(../Images/form/cancel.gif) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+
+.set_btn
+{
+    background: url(../Images/form/set.gif) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+
+.searchEx_btn
+{
+    background: url(../Images/form/searchEx.gif) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+.fq_btn
+{
+    background: url(../Images/form/fq.gif) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+
+
+.apply_btn
+{
+    background: url(../Images/form/apply.gif) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+.audit_btn
+{
+    background: url(../Images/form/audit.gif) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+
+.upload_btn
+{
+    background: url(../Images/form/upload.gif) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+
+.out_btn
+{
+    border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    background: url('../Images/form/out.gif') no-repeat;
+    width: 58px;
+    vertical-align: middle;
+}
+.Import_btn
+{
+    background: url(../Images/form/Import.gif) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+
+.Out_btn
+{
+    background: url(../Images/form/out.gif) no-repeat;
+    width: 58px;
+    height: 26px;
+    border: 0;
+    vertical-align: middle;
+}
+.table_list
+{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 99%;
+    display: :block;
+    border: 1px solid #ccc;
+    border-right: 0;
+    font-size: 12px;
+    background: #fff;
+}
+
+.table_list th
+{
+    background: url(../Images/form/th_bg.gif) repeat-x;
+    height: 31px;
+    line-height: 31px;
+    color: #000;
+    text-align: left;
+    padding: 0 10px;
+    border-right: 1px solid #d4d3d3;
+}
+
+.table_list td
+{
+    height: 31px;
+    line-height: 31px;
+    color: #000;
+    text-align: left;
+    padding: 0 10px;
+    border-top: 1px solid #d4d3d3;
+    border-right: 1px solid #d4d3d3;
+}
+
+.table_list .tr_bg
+{
+    background: #f4f4f4;
+}
+
+.red
+{
+    color: #c00;
+}
+
+.page
+{
+    width: 97%;
+    margin: 0 1%;
+    font-size: 12px;
+    color: #666;
+}
+
+.page a
+{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background: #fff;
+    text-align: center;
+    margin: 1px;
+    display: block;
+    float: left;
+    border: 1px solid #ccc;
+}
+
+.bottom
+{
+    position: absolute;
+    bottom: 0px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #666;
+    left: 0;
+}
+ 
+.searchEx_div 
+{
+    z-index: 9999px;
+    width: 300px;
+    height: 200;
+    border: #909090 1px solid;
+    background: #fff;
+    color: #333;
+    float: right;
+    margin-right: 5px;
+    margin-top: 0px;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=4); /*ie*/
+    -moz-box-shadow: 2px 2px 10px #909090; /*firefox*/
+    -webkit-box-shadow: 2px 2px 10px #909090; /*safari或chrome*/
+    box-shadow: 2px 2px 10px #909090; /*opera或ie9*/
+}
