@@ -1,0 +1,9 @@
+server:
+  port: 7777
+
+spring:
+  datasource:
+    username: rjgc
+    password: 123456
+    url: jdbc:mysql://103.228.170.64:3306/rjgc?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
