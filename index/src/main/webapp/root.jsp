@@ -21,7 +21,7 @@
 					     <i></i>
 					 </h2>
 				     <div class="hide">
-					     <h5 onclick="add()">招牌信息一览</h5>
+					     <h5 onclick="show()">招牌信息一览</h5>
 						 <h5 onclick="add()">招牌信息搜索</h5>
 					 </div>
 			     </li>
