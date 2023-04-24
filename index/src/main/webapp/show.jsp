@@ -14,10 +14,13 @@
    ListMapper dao=new ListMapper();
    ArrayList list=dao.findAll();
    %>
+   <script type="text/javascript">
+    function myAction(url){
+    	window.open(url);
+    }
+   </script> 
   <body>
 <h1 align="center"><br></h1><h1 align="center">招聘信息</h1>
-<form>
-<input type="hidden" name="id" >
 <table border="1" align="center" class="table11_6">
    <tr>
       <th>编号</th>
@@ -29,10 +32,10 @@
       <th>公司名称</th>
       <th>公司规模</th>
       <th>行业类型</th>
-      <th>工作链接</th>
+	  <th>工作链接</th>
       <th>公司链接</th>
    </tr>
-   <%for(int i=0;i<list.size();i++){
+   <%for(int i=0;i<10;i++){   //list.size()
     List obj=(List)list.get(i);%>
     <tr>
      <td><%=obj.getId()%></td>
@@ -44,11 +47,14 @@
      <td><%=obj.getCompany_name()%></td>
      <td><%=obj.getCompany_size()%></td>
      <td><%=obj.getIndustry_type()%></td>
-     <td><%=obj.getJob_href()%></td>
-     <td><%=obj.getCompany_href()%></td>
+	 <td>
+	    <input type="button" value="工作链接" OnClick="myAction('<%=obj.getJob_href()%>')"/>
+	 </td>
+     <td>
+     	<input type="button" value="公司链接" OnClick="myAction('<%=obj.getCompany_href()%>')"/>
+     </td>
     </tr>
    <%}%>
   </table>
- </form>
   </body>
 <html>

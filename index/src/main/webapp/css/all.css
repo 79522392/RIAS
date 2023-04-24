@@ -18,7 +18,7 @@ body {
     .table11_6,.table11_6 th,.table11_6 td {
         font-size:0.95em;
         text-align:center;
-        padding:4px;
+        padding:4px;  
         border-collapse:collapse;
     }
     .table11_6 th,.table11_6 td {
@@ -35,6 +35,7 @@ body {
     .table11_6 tr:nth-child(even){
         background-color:#ffffff;
     }
+
     
     
  
