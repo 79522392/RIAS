@@ -1,0 +1,105 @@
+/**********public**********/
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style-type: none;
+}
+body{
+	background: #fcfcfc;
+}
+a{
+	text-decoration-line: none;
+}
+/**********Nav Public**********/
+#sideBox,
+.sideLih,
+.sideHead{
+	background: #CA8EFF;
+}
+.sideLih,
+.sideHead{	
+	border-bottom: 1px solid #fff;
+	color: #fff;	
+}
+#sideBox,
+.sideLiUl{
+	box-shadow: 1px 0 3px #CA8EFF;
+}
+
+#sideBox{
+	
+	float:left;
+	left: 30px;
+	top:30%;
+	width: 150px;
+	height:500px;
+	padding: 0 0 50px 0;
+}
+ 
+.sideHead{
+	background: #CA8EFF;
+	height: 55px;
+	line-height: 55px;
+	color: #fff;
+	text-align: center;	
+	text-shadow: 1px 0px 0px #ccc;
+}
+ 
+.sideLi{
+	position: relative;
+	left: 0;
+	top:0;
+	float: left;
+    width: 200px;
+}
+.sideLih{
+	padding: 40px 0px 10px 20px;
+	font-weight: lighter;
+	font-size:18px;
+	width:160px;
+}
+.sideLiUl{
+	background: #F1E1FF;
+	position: absolute;
+	left:180px;
+	top:0;
+	height:300px;
+	width: 700px;
+	display: none;
+	opacity: 0;
+	overflow: hidden;
+	border: 1px solid 3214a76;
+	border-left: none;
+	border-radius: 3px 5px 5px 3px;
+}
+
+.sidebottom{
+	top:-300%;
+}
+.sideLiUl li{
+	color: #000;
+	float: left;
+	overflow: hidden;
+	height: 60px;
+	line-height: 80px;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 0 5px;
+	display: inline-block;
+	width: 200px;
+}
+.sideLiUl li a{
+	color: #000;
+	font-weight: lighter;
+	font-size:16px;
+}
+.sideLi h5:hover,
+.sideLiUl li:hover{
+	cursor: pointer;
+}
+.sideLiUl li:hover{
+	text-decoration-line: underline;
+}

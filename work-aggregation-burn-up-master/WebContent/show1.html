@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.1.2/echarts.min.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/jqrery/3.5.1/jquery.js"></script>
+    
+    </head>
+    <body>
+        <div id="main" style="width: 590px; height: 450px; background: white;"></div>
+        <script type="text/javascript">
+            var main=echarts.init(document.getElementById("main"))
+  		    
+            //配置echarts
+            var option = {
+            		  tooltip: {
+            			    trigger: 'axis',
+            			    axisPointer: {
+            			      type: 'shadow'
+            			    }
+            			  },
+            			  grid: {
+            			    left: '3%',
+            			    right: '4%',
+            			    bottom: '3%',
+            			    containLabel: true
+            			  },
+            			  xAxis: [
+            			    {
+            			      type: 'category',
+            			      data: ['上海', '北京', '深圳', '广州', '杭州', '苏州', '成都', '武汉', '南京', '西安'],
+            			      axisTick: {
+            			        alignWithLabel: true
+            			      }
+            			    }
+            			  ],
+            			  yAxis: [
+            			    {
+            			      type: 'value'
+            			    }
+            			  ],
+            			  series: [
+            			    {
+            			      name: 'Direct',
+            			      type: 'bar',
+            			      barWidth: '60%',
+            			      data: [2710,2322, 1428, 778, 671, 385, 371,365,347,193]
+            			    }
+            			  ]
+            			};
+
+                main.setOption(option)
+
+
+        </script>
+    </body>
+</html>

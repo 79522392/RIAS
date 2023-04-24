@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.1.2/echarts.min.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/jqrery/3.5.1/jquery.js"></script>
+    
+    </head>
+    <body>
+        <div id="main" style="width: 590px; height: 450px; background: white;"></div>
+        <script type="text/javascript">
+            var main=echarts.init(document.getElementById("main"))
+  		    
+            //配置echarts
+            var option = {
+            		  tooltip: {
+            			    trigger: 'item'
+            			  },
+            			  legend: {
+            			    top: '5%',
+            			    left: 'center'
+            			  },
+            			  series: [
+            			    {
+            			      name: 'Access From',
+            			      type: 'pie',
+            			      radius: ['40%', '70%'],
+            			      avoidLabelOverlap: false,
+            			      itemStyle: {
+            			        borderRadius: 10,
+            			        borderColor: '#fff',
+            			        borderWidth: 2
+            			      },
+            			      label: {
+            			        show: false,
+            			        position: 'center'
+            			      },
+            			      emphasis: {
+            			        label: {
+            			          show: true,
+            			          fontSize: '40',
+            			          fontWeight: 'bold'
+            			        }
+            			      },
+            			      labelLine: {
+            			        show: false
+            			      },
+            			      data: [
+            			        { value: 157, name: '运维总监' },
+            			        { value: 154, name: '硬件测试工程师' },
+            			        { value: 136, name: '系统运维工程师' },
+            			        { value: 128, name: '技术合伙人' },
+            			        { value: 122, name: '数据库管理员(DBA)' },
+            			        { value: 114, name: '全栈工程师' },
+            			        { value: 112, name: '大数据开发工程师' },
+            			        { value: 104, name: '然语言处理（NLP）' },
+            			        { value: 88, name: '网络工程师' }
+            			      ]
+            			    }
+            			  ]
+            			};
+
+                main.setOption(option)
+
+
+        </script>
+    </body>
+</html>

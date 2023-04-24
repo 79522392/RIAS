@@ -1,0 +1,85 @@
+/**********Nav Public**********/
+#sideBox,
+.sideLih,
+.sideHead{
+	background: #CA8EFF;
+}
+.sideLih,
+.sideHead{	
+	border-bottom: 1px solid #fff;
+	color: #fff;	
+}
+#sideBox,
+.sideLiUl{
+	box-shadow: 1px 0 3px #F1E1FF;
+}
+
+#sideBox{
+	position: fixed;
+	left: 0;
+	top: 20%;
+	width: 200px;
+	height: 340px;
+	padding: 0 0 20px 0;
+}
+ 
+.sideHead{
+	height: 55px;
+	line-height: 55px;
+	color: #fff;
+	text-align: center;	
+	text-shadow: 1px 0px 0px #ccc;
+}
+ 
+.sideLi{
+    position: relative;
+	left: 0;
+	top:0;
+}
+.sideLih{
+	padding: 10px 0px 10px 20px;
+	height: 60px;	
+	font-weight: lighter;
+}
+.sideLiUl{
+	background: #CA8EFF;
+	position: absolute;
+	left:200px;
+	top:0;
+	width: 306px;
+	display: none;
+	opacity: 0;
+	overflow: hidden;
+	border: 1px solid 3214a76;
+	border-left: none;
+	border-radius: 3px 5px 5px 3px;
+}
+
+.sidebottom{
+	top:-300%;
+}
+.sideLiUl li{
+	color: #fff;
+	float: left;
+	overflow: hidden;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 0 5px;
+	display: inline-block;
+	width: 90px;
+}
+.sideLiUl li a{
+	color: #fff;
+	font-weight: lighter;
+	font-size:12px;
+}
+.sideLi h5:hover,
+.sideLiUl li:hover{
+	cursor: pointer;
+}
+.sideLiUl li:hover{
+	text-decoration-line: underline;
+}
