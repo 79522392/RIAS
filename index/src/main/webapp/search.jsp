@@ -74,7 +74,7 @@
 </header>
 <div id="box">
     地区：<input type="area" id="input_1">工作：<input type="name" id="input_2">公司：<input type="comName" id="input_3">
-    <button id="check" class="btn btn-primary">搜索</button>
+    <button id="check" class="btn btn-primary" @click="check()">搜索</button>
     <%--                    <span class="flex-item" v-for="job in jobs" :key="job.id" class="card" style="width: 18rem;">--%>
     <%--                        <div class="card-body">--%>
     <%--                            <h5 class="card-title">{{job.jobName}}</h5>--%>
@@ -107,6 +107,8 @@
                 <%--                        <a :href=job.companyHref target="_blank" class="btn btn-primary">公司详情</a>--%>
                 <%--                    </div>--%>
                 <%--                </div>--%>
+                <button v-if="favos.includes(job.id)" type="button" class="btn btn-danger" id="qx" @click="qxshoucang(job.id)">取消收藏</button>
+                <button v-else type="button" class="btn btn-warning" id="sc" @click="shoucang(job.id)">添加收藏</button>
             </div>
             <div class="row">
                 <div class="col-2">
@@ -138,9 +140,13 @@
     var box = new Vue({
         el: "#box",
         data: {
-            jobs: [{}]
+            jobs: [{}],
+            favos:[],
+            // username:'',
         },
         mounted() {
+            localStorage.setItem("username","lxq")
+            // localStorage.setItem("name",'lll')
             $.ajax({
                 url: 'http://103.228.170.64:7777/job/all',
                 type: 'get',
@@ -150,25 +156,106 @@
                     // console.log(box.jobs.length)
                 }
             })
-            var btn = document.getElementById("check");
-            btn.onclick = function () {
-                $.ajax({
-                    url: 'http://103.228.170.64:7777/job/some',
-                    type: 'get',
-                    data: {
-                        "area": $('#input_1').val(),
-                        "name": $('#input_2').val(),
-                        "comName": $('#input_3').val()
-                    },
-                    success(resp) {
-                        box.jobs = resp
-                    }
-                })
-            }
+            $.ajax({
+                url: 'http://103.228.170.64:7777/favo/get',
+                type: 'get',
+                data: {
+                    'username':localStorage.getItem("username")
+                },
+                success(resp) {
+                    box.favos = resp
+                    console.log(box.favos)
+                }
+            })
+
 
         },
-        method: {},
+        methods: {
+            shoucang:function(id){
+                $.ajax({
+                    url: 'http://103.228.170.64:7777/favo/add',
+                    type: 'get',
+                    data: {
+                        "username": localStorage.getItem("username"),
+                        "jobId": id,
+                    },
+                    success(resp) {
+                        console.log(resp)
+                    }
+                })
 
+                $.ajax({
+                    url: 'http://103.228.170.64:7777/favo/get',
+                    type: 'get',
+                    data: {
+                        'username':localStorage.getItem("username")
+                    },
+                    success(resp) {
+                        box.favos = resp
+                    }
+                })
+                $.ajax({
+                    url: 'http://103.228.170.64:7777/favo/get',
+                    type: 'get',
+                    data: {
+                        'username':localStorage.getItem("username")
+                    },
+                    success(resp) {
+                        box.favos = resp
+                    }
+                })
+            },
+            qxshoucang:function(id){
+
+                $.ajax({
+                    url: 'http://103.228.170.64:7777/favo/remove',
+                    type: 'get',
+                    data: {
+                        "username": localStorage.getItem("username"),
+                        "jobId": id,
+                    },
+                    success(resp) {
+                        console.log(resp)
+                    }
+                })
+
+                $.ajax({
+                    url: 'http://103.228.170.64:7777/favo/get',
+                    type: 'get',
+                    data: {
+                        'username':localStorage.getItem("username")
+                    },
+                    success(resp) {
+                        box.favos = resp
+                    }
+                })
+                $.ajax({
+                    url: 'http://103.228.170.64:7777/favo/get',
+                    type: 'get',
+                    data: {
+                        'username':localStorage.getItem("username")
+                    },
+                    success(resp) {
+                        box.favos = resp
+                    }
+                })
+            },
+        },
+
+        check:function (){
+            $.ajax({
+                url: 'http://103.228.170.64:7777/job/some',
+                type: 'get',
+                data: {
+                    "area": $('#input_1').val(),
+                    "name": $('#input_2').val(),
+                    "comName": $('#input_3').val()
+                },
+                success(resp) {
+                    box.jobs = resp
+                }
+            })
+        }
     })
 </script>
 </html>
