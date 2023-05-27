@@ -29,7 +29,7 @@ url = 'https://www.zhipin.com/web/geek/job?query=java&city=100010000'
 driver.get(url)
 driver.implicitly_wait(5)
 
-# res = driver.page_source
+# res = driver.page_source 、
 # root = etree.HTML(res)
 # divs = root.xpath('//div[@class="search-job-result"]')
 # for div in divs:
