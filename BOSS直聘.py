@@ -30,7 +30,7 @@ driver.get(url)
 driver.implicitly_wait(5)
 
 # res = driver.page_source 、
-# root = etree.HTML(res)
+# root = etree.HTML(res)。
 # divs = root.xpath('//div[@class="search-job-result"]')
 # for div in divs:
 #     href = div.xpath('//a[@class="job-card-left"]/@href')
